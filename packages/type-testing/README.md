@@ -7,7 +7,7 @@ A micro library for compile-time type testing in TypeScript.
 [![npm version](https://img.shields.io/npm/v/@deessejs/type-testing.svg)](https://www.npmjs.com/package/@deessejs/type-testing)
 [![npm bundle size](https://img.shields.io/bundlejs/size/@deessejs/type-testing)](https://www.npmjs.com/package/@deessejs/type-testing)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-blue.svg)](https://www.typescriptlang.org/)
-[![Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen)](https://github.com/nesalia-inc/type-testing/actions)
+[![Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen)](https://github.com/deessejs/type-testing/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 ## Installation

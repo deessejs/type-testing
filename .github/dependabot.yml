@@ -1,0 +1,54 @@
+version: 2
+
+updates:
+  # ── JavaScript/TypeScript dependencies (pnpm workspaces) ──
+  # `npm` ecosystem covers pnpm (detects pnpm-lock.yaml). The plural `directories`
+  # key with globs (GA 2024-06) covers the root + every workspace in one entry.
+  - package-ecosystem: "npm"
+    directories:
+      - "/"
+      - "/packages/*"
+      - "/apps/*"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "Europe/Paris"
+    open-pull-requests-limit: 10
+    # Lib is published to npm — bump the declared ranges rather than widen them.
+    versioning-strategy: "increase"
+    commit-message:
+      prefix: "chore(deps)"
+      prefix-development: "chore(deps-dev)"
+      include: "scope"
+    groups:
+      # One PR for all non-breaking production dependency updates.
+      production-dependencies:
+        dependency-type: "production"
+        update-types:
+          - "minor"
+          - "patch"
+      # One PR for all non-breaking dev/tooling dependency updates.
+      development-dependencies:
+        dependency-type: "development"
+        update-types:
+          - "minor"
+          - "patch"
+    # Major bumps are intentionally left ungrouped so each gets its own reviewable PR.
+
+  # ── GitHub Actions used in .github/workflows ──
+  # This ecosystem does NOT support glob `directories` — must use singular `directory: "/"`.
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "Europe/Paris"
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: "chore(ci)"
+    groups:
+      github-actions:
+        patterns:
+          - "*"

@@ -15,14 +15,14 @@
   <a href="https://www.npmjs.com/package/@deessejs/type-testing">
     <img src="https://img.shields.io/bundlejs/size/@deessejs/type-testing" alt="Bundle Size">
   </a>
-  <a href="https://github.com/nesalia-inc/type-testing/actions">
-    <img src="https://img.shields.io/github/actions/workflow/status/nesalia-inc/type-testing/ci?label=tests" alt="Tests">
+  <a href="https://github.com/deessejs/type-testing/actions">
+    <img src="https://img.shields.io/github/actions/workflow/status/deessejs/type-testing/ci?label=tests" alt="Tests">
   </a>
-  <a href="https://github.com/nesalia-inc/type-testing/actions">
+  <a href="https://github.com/deessejs/type-testing/actions">
     <img src="https://img.shields.io/badge/coverage-100%25-brightgreen" alt="Coverage">
   </a>
-  <a href="https://github.com/nesalia-inc/type-testing/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/nesalia-inc/type-testing" alt="License">
+  <a href="https://github.com/deessejs/type-testing/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/deessejs/type-testing" alt="License">
   </a>
 </p>
 

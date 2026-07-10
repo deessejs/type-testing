@@ -1,0 +1,85 @@
+name: 🐛 Bug report
+description: Report a bug or unexpected behavior in @deessejs/type-testing
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to file a bug report. Please fill out the sections below so we can reproduce and fix the issue quickly.
+
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Preflight checklist
+      options:
+        - label: I searched existing issues and this has not been reported yet.
+          required: true
+        - label: I am using a supported TypeScript version (5.0+).
+          required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      description: Which part of the library does this affect?
+      options:
+        - "types (Equal, IsAny, IsNever, ...)"
+        - "api (check / assert / expect)"
+        - "runtime (type guards)"
+        - "vitest (matchers / setup)"
+        - "web (landing site)"
+        - "build / packaging / exports"
+        - "other / not sure"
+      default: 0
+    validations:
+      required: true
+
+  - type: input
+    id: package-version
+    attributes:
+      label: Package version
+      description: Which version of `@deessejs/type-testing` are you running?
+      placeholder: "0.3.4"
+    validations:
+      required: true
+
+  - type: input
+    id: ts-version
+    attributes:
+      label: TypeScript version
+      description: Output of `tsc --version`.
+      placeholder: "5.5.4"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: A clear description of the bug, including what you expected to happen instead.
+      placeholder: "Equal<never, never> returns ... but I expected ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction
+      description: The smallest type/code snippet that reproduces the problem. This will be rendered as TypeScript.
+      render: ts
+      placeholder: |
+        import { check } from '@deessejs/type-testing'
+
+        // expected to pass, but errors:
+        check<string>().equals<string>()
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Anything else that might help — tsconfig options (strict, moduleResolution), bundler, editor, screenshots.
+    validations:
+      required: false

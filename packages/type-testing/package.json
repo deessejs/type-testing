@@ -9,10 +9,10 @@
   "homepage": "https://types.deessejs.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nesalia-inc/type-testing.git"
+    "url": "https://github.com/deessejs/type-testing.git"
   },
   "bugs": {
-    "url": "https://github.com/nesalia-inc/type-testing/issues"
+    "url": "https://github.com/deessejs/type-testing/issues"
   },
   "exports": {
     ".": {

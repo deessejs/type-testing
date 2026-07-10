@@ -1,0 +1,11 @@
+# Code owners for @deessejs/type-testing
+#
+# Syntax: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+# Precedence: the LAST matching pattern wins.
+#
+# NOTE: owners must have explicit WRITE access to this repo — otherwise GitHub
+# silently ignores them. To enforce owner review, enable "Require review from
+# Code Owners" in the branch protection rule for `main`.
+
+# Global owners — everything not matched by a more specific rule below.
+* @codewizdave @martyy-code

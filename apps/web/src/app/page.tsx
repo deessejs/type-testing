@@ -18,7 +18,7 @@ export default function Home() {
 
             <div className="flex items-center gap-1">
               <Button variant="ghost" size="sm" asChild>
-                <Link href="https://github.com/nesalia-inc/type-testing">
+                <Link href="https://github.com/deessejs/type-testing">
                   GitHub
                 </Link>
               </Button>
@@ -39,7 +39,7 @@ export default function Home() {
 
             <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
               <Button variant="outline" asChild className="h-10">
-                <Link href="https://github.com/nesalia-inc/type-testing">
+                <Link href="https://github.com/deessejs/type-testing">
                   Get Started
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
