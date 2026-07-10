@@ -1,29 +1,29 @@
 {
   "permissions": {
-    "allow": [
-      "WebSearch",
-      "WebFetch(domain:github.com)",
-      "Bash(gh repo view:*)",
-      "Bash(gh search repos:*)",
-      "Bash(gh api:*)",
-      "Bash(gh issue comment:*)",
-      "Bash(pnpm --filter @deessejs/type-testing test)",
-      "Bash(pnpm --filter @deessejs/type-testing typecheck:*)",
-      "Bash(pnpm --filter @deessejs/type-testing test:*)",
-      "Bash(pnpm --filter @deessejs/type-testing build)",
-      "Bash(pnpm --filter @deessejs/type-testing lint:*)",
-      "Bash(pnpm lint)",
-      "Bash(pnpm typecheck)",
-      "Bash(pnpm test)",
-      "Bash(git commit:*)",
-      "Bash(git add:*)",
-      "Bash(pnpm install)",
-      "Bash(pnpm test:*)",
-      "Bash(gh run list:*)",
-      "Bash(pnpm --filter @deessejs/type-testing test:coverage:*)",
-      "Bash(gh pr view:*)",
-      "Bash(gh pr reviews:*)",
-      "Bash(gh pr list:*)"
+    "defaultMode": "bypassPermissions",
+
+    "allow": ["Read(*)", "Write(*)", "Edit(*)", "Bash(*)", "Read(//tmp/**)"],
+
+    "deny": [
+      "Write(//tmp/**)",
+      "Edit(//tmp/**)",
+      "Bash(rm */tmp/*)",
+
+      "Bash(kill *)",
+      "Bash(pkill *)",
+      "Bash(killall *)",
+      "Bash(xargs kill*)",
+      "Bash(taskkill*)",
+
+      "Bash(git rebase *)",
+      "Bash(git reset --hard*)",
+      "Bash(git clean*)",
+
+      "Bash(sudo *)",
+      "Bash(chmod *)",
+      "Bash(chown *)",
+      "Bash(rm -rf / *)",
+      "Bash(alias *)"
     ]
   }
 }

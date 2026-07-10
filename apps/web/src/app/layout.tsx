@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: "Type Testing - Compile-time Type Testing for TypeScript",
   description: "A micro library for compile-time type testing in TypeScript. Test your types with confidence and precision.",
   keywords: ["TypeScript", "type testing", "compile-time", "testing", "types", "library"],
-  authors: [{ name: "nesalia-inc" }],
+  authors: [{ name: "deessejs" }],
   icons: {
     icon: "/icon.png",
     apple: "/apple-icon.png",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Type Testing - Compile-time Type Testing for TypeScript",
     description: "A micro library for compile-time type testing in TypeScript. Test your types with confidence and precision.",
-    url: "https://github.com/nesalia-inc/type-testing",
+    url: "https://github.com/deessejs/type-testing",
     siteName: "Type Testing",
     type: "website",
   },

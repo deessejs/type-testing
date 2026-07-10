@@ -17,7 +17,7 @@ export function Header() {
         </Link>
 
         <Link
-          href="https://github.com/nesalia-inc/type-testing"
+          href="https://github.com/deessejs/type-testing"
           target="_blank"
           rel="noopener noreferrer"
           className="rounded-md p-2 transition-colors hover:bg-accent"
