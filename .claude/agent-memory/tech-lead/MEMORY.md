@@ -1,0 +1,5 @@
+- [GitHub Issue API (types + fields) — 2026](github-issue-api-2026.md) — REST endpoints to apply `type` + `issue_field_values` via `gh api`; header `X-GitHub-Api-Version: 2026-03-10` required.
+- [create-issue skill](../skills/create-issue/SKILL.md) — **use this** when asked to create/file/open an issue. Contains the full org mapping (labels, issue types, issue fields IDs for `deessejs`), all templates, CODEOWNERS, and the correct `gh api --input -` workaround.
+- **Repo labels** (see skill): `area:*`, `status:*`, `breaking-change`, `dependencies`; GitHub defaults preserved.
+- **Org issue types**: Task / Bug / Feature.
+- **Org issue fields**: Priority (43676415), Effort (43676418) + Start/Target date. Option IDs in skill file.
