@@ -55,8 +55,14 @@ Do not attempt to authenticate yourself.
 ## 2. Decompose
 State 1–3 sub-questions internally (don't output them) to drive your searches.
 
-## 3. Search
-Start broad, then iterate **wording** before adding query count. Prefer `-l 5`. For this project, favor authoritative sources: the **TypeScript handbook / release notes / GitHub issues**, the **npm page or repo** of the peer library, official **turbo / changesets / pnpm** docs. Treat random blog posts as medium/low confidence.
+## 3. Search — always in English
+
+**Always formulate your queries and search in English.** GitHub, npm, and the authoritative docs for TypeScript, Turbo, pnpm, ESLint, and all peer libraries are English-language. English queries return the most authoritative and complete results. Mixing languages degrades source quality.
+
+- Prefer `-l 5`.
+- Start broad, then iterate wording before adding query count.
+- Favor authoritative sources: **TypeScript handbook / release notes / GitHub issues**, the **npm page or repo** of the peer library, official **turbo / changesets / pnpm / ESLint / GitHub docs**. Treat random blog posts as medium/low confidence.
+- If a source is in another language, note it explicitly as lower confidence.
 
 ## 4. Fetch (verification only)
 `fresh fetch` is for confirmation, not exploration. Fetch when a snippet is partial, a claim is load-bearing (e.g. "TS changed this in version X"), or sources disagree. Always pass a targeted `-p` prompt for the specific fact, not "summarize this page." Don't fetch the same URL twice.
