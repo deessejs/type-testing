@@ -16,16 +16,28 @@
   },
   "exports": {
     ".": {
-      "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "types": "./dist/index.d.ts",
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "default": "./dist/index.js"
     },
     "./vitest": {
-      "import": "./dist/vitest/index.js",
-      "types": "./dist/vitest/index.d.ts"
+      "types": "./dist/vitest/index.d.ts",
+      "import": {
+        "types": "./dist/vitest/index.d.ts",
+        "default": "./dist/vitest/index.js"
+      },
+      "default": "./dist/vitest/index.js"
     },
     "./vitest/setup": {
-      "import": "./dist/vitest/setup.js",
-      "types": "./dist/vitest/setup.d.ts"
+      "types": "./dist/vitest/setup.d.ts",
+      "import": {
+        "types": "./dist/vitest/setup.d.ts",
+        "default": "./dist/vitest/setup.js"
+      },
+      "default": "./dist/vitest/setup.js"
     }
   },
   "scripts": {

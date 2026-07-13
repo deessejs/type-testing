@@ -47,10 +47,17 @@ All checks must pass before a PR can be merged (they also run in CI and via the
 pre-commit hook):
 
 ```bash
-pnpm lint        # ESLint across all packages
-pnpm typecheck   # tsc --noEmit
-pnpm test        # vitest
+pnpm lint              # ESLint across all packages
+pnpm typecheck         # tsc --noEmit
+pnpm test              # vitest
+pnpm lint:sherif       # workspace version consistency (sherif)
+pnpm lint:publint      # package.json / exports map shape (publint)
+pnpm lint:attw         # consumer-facing type resolution (@arethetypeswrong/cli)
+pnpm check:packaging   # shorthand: runs the three packaging checks above
 ```
+
+These three packaging/version checks run on every PR and are required to merge;
+the same commands are available locally for the same gate.
 
 Run a single workspace's tests while iterating:
 

@@ -2,7 +2,7 @@
  * Special type detection utilities.
  */
 
-import type { Equal } from './equality'
+import type { Equal } from './equality.js'
 
 /**
  * Checks if a type is `any`.
