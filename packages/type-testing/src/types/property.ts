@@ -2,7 +2,7 @@
  * Property testing utilities.
  */
 
-import type { Equal } from './equality'
+import type { Equal } from './equality.js'
 
 /**
  * Checks if a type has a specific property.

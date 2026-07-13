@@ -38,3 +38,15 @@ jobs:
 
       - name: Test
         run: pnpm turbo test
+
+      - name: Build
+        run: pnpm turbo build
+
+      - name: Sherif (workspace version consistency)
+        run: pnpm turbo lint:sherif
+
+      - name: Publint (packaging shape)
+        run: pnpm turbo lint:publint
+
+      - name: Are the types wrong (consumer-side type resolution)
+        run: pnpm turbo lint:attw

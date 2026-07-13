@@ -7,6 +7,10 @@
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
+    "lint:publint": "publint --strict packages/type-testing",
+    "lint:attw": "pnpm turbo run @deessejs/type-testing#build && attw --pack packages/type-testing --ignore-rules no-resolution cjs-resolves-to-esm --format table",
+    "lint:sherif": "sherif",
+    "check:packaging": "pnpm lint:publint && pnpm lint:attw && pnpm lint:sherif",
     "typecheck": "turbo typecheck",
     "test": "turbo test",
     "test:coverage": "turbo test:coverage",
@@ -16,11 +20,14 @@
     "publish": "turbo build && changeset publish"
   },
   "devDependencies": {
+    "@arethetypeswrong/cli": "^0.18.5",
     "@changesets/cli": "^2.27.0",
     "@eslint/js": "^9.0.0",
     "eslint": "^9.0.0",
     "husky": "^9.0.0",
     "prettier": "^3.0.0",
+    "publint": "^0.3.21",
+    "sherif": "^1.13.0",
     "turbo": "^2.0.0",
     "typescript-eslint": "^8.0.0"
   },

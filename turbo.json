@@ -14,6 +14,29 @@
       "dependsOn": ["^lint"],
       "cache": true
     },
+    "lint:publint": {
+      "cache": true,
+      "inputs": [
+        "packages/type-testing/package.json",
+        "packages/type-testing/dist/**"
+      ]
+    },
+    "lint:attw": {
+      "dependsOn": ["^build"],
+      "cache": true,
+      "inputs": [
+        "packages/type-testing/package.json",
+        "packages/type-testing/dist/**"
+      ]
+    },
+    "lint:sherif": {
+      "cache": true,
+      "inputs": [
+        "**/package.json",
+        "pnpm-lock.yaml",
+        "pnpm-workspace.yaml"
+      ]
+    },
     "typecheck": {
       "dependsOn": ["^typecheck"],
       "cache": true
